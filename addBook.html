@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="css/addBookStyle.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>MyBook App</h1>
+
+        <ul>
+            <li class="nav-item" id="beranda-dashboard">Beranda</li>
+            <li class="nav-item" id="buku">Buku</li>
+            <li class="nav-item" id="tambah">Tambah Buku</li>
+        </ul>
+
+    </div>
+
+    <div class="addBook-container">
+        <img src="/assets/add.png" alt="">
+        <h1>Tambah Buku <br> Bacaan Anda</h1>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="judul">Judul</label></td>
+                    <td><input type="text" id="judul" name="judul" required></td>
+                </tr>
+                <tr>
+                    <td><label for="penulis">Penulis</label></td>
+                    <td><input type="text" id="penulis" name="penulis" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tahunTerbit">Tahun Terbit</label></td>
+                    <td><input type="date" id="tahunTerbit" name="tahunTerbit" required></td>
+                </tr>
+                <tr>
+                    <td><label for="deskripsi">Deskripsi</label></td>
+                    <td><input type="text" id="deskripsi" name="deskripsi" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="">Syarat & Ketentuan</a></li>
+                    <li><a href="">Karir</a></li>
+                    <li><a href="">Privasi</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-social">
+                <p>Ikuti Kami</p>
+                <ul>
+                    <li><a href="#"><img src="asset/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="asset/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="asset/twitter.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 MyBook App. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

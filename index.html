@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi MyBook</title>
+    <link rel="stylesheet" href="/css/indexStyle.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>MyBook App</h1>
+
+        <ul>
+            <li class="nav-item" id="beranda">Beranda</li>
+            <li class="nav-item" id="buku">Buku</li>
+            <li class="nav-item" id="login">Login</li>
+        </ul>
+
+    </div>
+
+    <main>
+        <section class="sectionA">
+            <div class="greeting">
+                <h1>Selamat Datang di Aplikasi MyBook <br>Buka Dunia Dengan <span>Membaca Buku</span></h1>
+                <p>
+                    Temukan semesta pengetahuan dan imajinasi dengan Aplikasi MyBook. Jelajahi berbagai cerita,  perluas <br> wawasan, dan buka kekuatan membaca kapan saja, di mana saja. Apakah Anda buku klasik atau <br> atau non-fiksi yang penuh wawasan, Aplikasi MyBook memiliki sesuatu untuk semua orang.
+                </p>
+                
+                <div class="point">
+                    <div class="point-item"> <p><span>50+</span> <br>Pengguna</p></div>
+                    <div class="point-item"> <p><span>50+</span> <br>Buku</p></div>
+                    <div class="point-item"> <p><span>50+</span> <br>Penulis</p></div>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="/assets/readingBook.png" alt="Gambar Membaca Buku">
+                <!-- <p>ini adalah gambar</p> -->
+            </div>
+        </section>
+
+        <section class="sectionB">
+            <h1>Mengapa Harus Membaca Buku?</h1>
+            <div class="benefit-card">
+                <div class="benefit-item">
+                    <img src="/assets/benefit-1.png" alt="">
+                    <h4>Meningkatkan Pengetahuan dan Wawasan</h4>
+                    <p>Membaca buku memungkinkan Anda untuk belajar hal baru, memperluas pengetahuan, dan memahami berbagai perspektif serta ide.</p>
+                </div>
+                <div class="benefit-item">
+                    <img src="/assets/benefit-2.png" alt="">
+                    <h4>Meningkatkan Keterampilan Berpikir Kritis</h4>
+                    <p>Dengan membaca, Anda dapat melatih otak untuk berpikir lebih kritis dan analitis, memperkuat kemampuan untuk mengevaluasi informasi dengan bijak.</p>
+                </div>
+                <div class="benefit-item">
+                    <img src="/assets/benefit-3.png" alt="">
+                    <h4>Meningkatkan Kemampuan Bahasa dan Kosakata</h4>
+                    <p>Membaca buku secara rutin membantu memperkaya kosakata, memperbaiki tata bahasa, serta meningkatkan kemampuan berkomunikasi baik secara lisan maupun tulisan.s</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sectionC">
+            <h1>Book Preview</h1>
+            <div class="book-preview" id="book-preview">
+                <!-- dari javascript -->
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="">Syarat & Ketentuan</a></li>
+                    <li><a href="">Karir</a></li>
+                    <li><a href="">Privasi</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-social">
+                <p>Ikuti Kami</p>
+                <ul>
+                    <li><a href="#"><img src="asset/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="asset/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="asset/twitter.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 MyBook App. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const book = [
+            {
+                judul: 'Buku 1',
+                penulis: 'Penulis 1',
+                tahunTerbit: '2022',
+                deskripsi: 'Ini adalah deskripsi buku 1',   
+            },
+            {
+                judul: 'Buku 2',
+                penulis: 'Penulis 2',
+                tahunTerbit: '2022',
+                deskripsi: 'Ini adalah deskripsi buku 2',   
+            },
+            {
+                judul: 'Buku 3',
+                penulis: 'Penulis 3',
+                tahunTerbit: '2022',
+                deskripsi: 'Ini adalah deskripsi buku 3',   
+            },    
+            {
+                judul: 'Buku 4',
+                penulis: 'Penulis 4',
+                tahunTerbit: '2022',
+                deskripsi: 'Ini adalah deskripsi buku 4',
+            },
+            {
+                judul: 'Buku 5',
+                penulis: 'Penulis 5',
+                tahunTerbit: '2022',
+                deskripsi: 'Ini adalah deskripsi buku 5',
+            },
+            {
+                judul: 'Buku 6',
+                penulis: 'Penulis 6',
+                tahunTerbit: '2022',
+                deskripsi: 'Ini adalah deskripsi buku 6',
+            }
+        ]
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const bookContainer = document.getElementById('book-preview');
+            book.forEach((buku) => {
+                const bookItem = document.createElement('div');
+                bookItem.classList.add('book-item');
+                bookItem.innerHTML = `
+                    <img src="/assets/book.png" alt="">
+                    <h4>${buku.judul}</h4>
+                    <p>${buku.penulis}</p>
+                    <p>${buku.tahunTerbit}</p>
+                    <p>${buku.deskripsi}</p>
+                    <button>Baca</button>
+                `;
+                bookContainer.appendChild(bookItem);
+            });
+        });
+    </script>
+</body>
+</html>
