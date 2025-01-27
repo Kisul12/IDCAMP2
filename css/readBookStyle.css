@@ -62,81 +62,66 @@ main {
     transform: scale(1.1); 
 }
 
-.addBook-container {
-    margin: auto;
-    /* margin-top: 150px; */
-    margin-bottom: 150px;
-    width: 30%;
-    padding: 20px;
-    border: 5px solid #29b2f7;
-    border-radius: 15px;
+
+.book-details {   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
-.addBook-container img {
-    width: 50%;
-    display: block;
-    margin: auto;   
+.book-details img {
+    width: 25%;
 }
-.addBook-container h1 {
+
+.book-details p {
     text-align: center;
-    padding: 5px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    line-height: 25px;
+    font-weight: 500;
 }
 
-.addBook-container form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-form {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid black; */
-}
-
-td {
-    /* height: 50px; */
+.book-details button.selesai {
+    margin-top: 20px;
     padding: 10px;
-}
-
-input {
-    padding: 10px;
-    border-radius: 5px;
-    border-color: #29b2f7;
-    line-height: 1.5;   
-    border: 2px solid rgba(41, 178, 247, 0.25); /* Border dengan opacity 25% */
-}
-
-button {
-    width: 60%;
-    padding: 10px;
-    background-color:#29b2f7;
-    /* background-color: ; */
+    background-color:#29f75d;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: all 0.3s ease;
 }
 
-button:hover {
-    background-color: #007bff;
+.book-details button.kembali {
+    margin-top: 20px;
+    padding: 10px;
+    background-color:#29b2f7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
-/* Styling Footer */
+.book-details button.selesai:hover {
+    background-color: #29b84d;
+}
+
+.book-details button.kembali:hover {
+    background-color: #0e8ccb;
+}
+
 footer {
+    margin-top: 100px;
     background-color: #29b2f7;
     color: white;
     padding: 40px 0;
     text-align: center;
 }
 
-/* Container utama footer */
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -147,7 +132,6 @@ footer {
 }
 
 
-/* Navigation Links */
 .footer-nav ul {
     list-style: none;
     display: flex;
@@ -167,9 +151,6 @@ footer {
     transition: color 0.3s ease;
 }
 
-
-
-/* Social Media Links */
 .footer-social {
     text-align: center;
     margin-top: 20px;

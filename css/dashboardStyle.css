@@ -1,7 +1,5 @@
 * {
     margin: 0px;
-    /* padding: 15px; */
-    /* border: 1px solid #dedede;    */
     font-family: poppins;
 }
 
@@ -46,23 +44,22 @@ main {
     margin-left: 50px;
 }
 
-#tambah {
+#logout {
     color: white;
-    background-color: #29b2f7;
+    background-color: #f72929;
     padding: 8px;
     border-radius: 10px;
     transition: all 0.3s ease; 
 }
 
-#tambah:hover {
-    color: #29b2f7;
-    border: 2px solid #29b2f7;
+#logout:hover {
+    color: #f72929;
+    border: 2px solid #b42929;
     background-color: #fff;
     transform: scale(1.1); 
 }
 
 .sectionA {
-    /* margin-top: 30px; */
     align-items: center;
     justify-content: center;
     width: 90%;
@@ -190,15 +187,10 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: white;
-    /* transition: all 0.3s ease;  */
 }
 
 .book-item img {
     width: 100%;
-    /* height: 200px; */
-    /* object-fit: cover; */
-    /* border-radius: 10px; */
-    /* margin-bottom: 10px; */
 }
 
 .sectionC h1 {
@@ -206,7 +198,6 @@ main {
     margin-bottom: 30px;
 }
 
-/* Styling Footer */
 footer {
     background-color: #29b2f7;
     color: white;
@@ -214,7 +205,6 @@ footer {
     text-align: center;
 }
 
-/* Container utama footer */
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -225,7 +215,6 @@ footer {
 }
 
 
-/* Navigation Links */
 .footer-nav ul {
     list-style: none;
     display: flex;
@@ -245,9 +234,6 @@ footer {
     transition: color 0.3s ease;
 }
 
-
-
-/* Social Media Links */
 .footer-social {
     text-align: center;
     margin-top: 20px;
@@ -278,65 +264,4 @@ footer {
 .footer-bottom {
     padding: 10px 0;
     font-size: 14px;
-}
-
-/* Responsive design */
-@media screen and (max-width: 768px) {
-    .nav ul {
-        display: none; /* Menyembunyikan menu di navbar */
-    }
-
-    .nav h1 {
-        font-size: 24px;
-        margin-left: 20px;
-    }
-
-    .book-item {
-        width: 100%; /* Mengatur item buku untuk tampilan penuh di layar kecil */
-        margin-bottom: 15px;
-    }
-
-    .benefit-item {
-        width: 100%; /* Membuat benefit card menjadi lebar penuh di perangkat kecil */
-        margin-bottom: 20px;
-    }
-
-    .sectionA {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .sectionA .img img {
-        width: 80%; /* Memperkecil gambar di perangkat kecil */
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-nav ul {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .footer-social ul {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .book-item {
-        width: 100%; /* Mengatur item buku agar lebih lebar di layar kecil */
-    }
-    
-    .footer-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-social ul {
-        flex-direction: column;
-    }
 }

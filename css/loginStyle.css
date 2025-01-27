@@ -123,7 +123,6 @@ button:hover {
     background-color: #007bff;
 }
 
-/* Styling Footer */
 footer {
     background-color: #29b2f7;
     color: white;
@@ -131,7 +130,6 @@ footer {
     text-align: center;
 }
 
-/* Container utama footer */
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -142,7 +140,6 @@ footer {
 }
 
 
-/* Navigation Links */
 .footer-nav ul {
     list-style: none;
     display: flex;
@@ -162,9 +159,6 @@ footer {
     transition: color 0.3s ease;
 }
 
-
-
-/* Social Media Links */
 .footer-social {
     text-align: center;
     margin-top: 20px;

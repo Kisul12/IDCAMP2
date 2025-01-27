@@ -36,7 +36,6 @@ loginForm.addEventListener('submit', (event) => {
     event.preventDefault();
 })
 
-
 // Check login
 function login(user, pass) {
     if (user === userAcc && pass === passAcc) {
@@ -45,6 +44,8 @@ function login(user, pass) {
         alert('Username atau password salah');
     }
 }
+
+
 
 
 
